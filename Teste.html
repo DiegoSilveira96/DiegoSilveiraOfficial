@@ -1,0 +1,30 @@
+﻿
+<style>
+    label{background-color: #0094ff}
+    label:hover{background-color: orangered; cursor: pointer;}
+    #geral div{
+        width: 400;
+        height: 250;
+        background-color: #eee;
+        display: none;
+    }
+    #geral input[type="radio"]{display:none;}
+    #geral input[type="radio"]:checked + div{
+        background-color: #aaa;
+        display: block;
+    }
+</style>
+<label for="c1">home</label>
+<label for="c2">services</label>
+<label for="c3">contacts</label>
+
+<div id="geral">
+    <input type="radio" id="c1" name="group" />
+    <div id="home">CONTEÚDO 1</div>
+
+    <input type="radio" id="c2" name="group" />
+    <div id="services">CONTEÚDO 2</div>
+
+    <input type="radio" id="c3" name="group" />
+    <div id="home">CONTEÚDO 3</div>
+</div>
